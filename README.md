@@ -64,11 +64,14 @@
 
 ### 🧭 Instalação e Execução
 
-# 1. Instale as dependências
+```bash
+# 1. Instalar as dependências
 npm install
+# ou
+yarn
 
-# 2. Execute o projeto em modo desenvolvimento
+# 2. Rodar o projeto em modo desenvolvimento
 npm run dev
-
-# 3. Acesse no navegador
-# http://localhost:5173
+# ou
+yarn dev
+```
