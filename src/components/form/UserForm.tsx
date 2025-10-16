@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { User, UserFormData } from "../types/user";
+
 import {
   FaUser,
   FaEnvelope,
@@ -10,8 +10,10 @@ import {
   FaUserPlus,
   FaUserEdit,
 } from "react-icons/fa";
-import { useUserStore } from "../stores/userStore";
+
 import { useTranslation } from "react-i18next";
+import { User, UserFormData } from "../../types/user";
+import { useUserStore } from "../../stores/userStore";
 
 interface UserFormProps {
   user?: User | null;

@@ -1,10 +1,12 @@
 
 import React from 'react';
-import { User } from '../types/user';
+
 import { FaUsers } from 'react-icons/fa';
 import { ImSpinner2 } from 'react-icons/im';
-import { UserCard } from './UserCard';
+
 import { useTranslation } from 'react-i18next';
+import { User } from '../../types/user';
+import { UserCard } from '../cards/UserCard';
 
 interface UserListProps {
   users: User[];

@@ -1,14 +1,15 @@
 
 import React, { useEffect } from 'react';
-import { UserList } from './components/UserList';
-import { UserForm } from './components/UserForm';
-import { Header } from './components/Header';
-import { StatsCards } from './components/StatsCards';
-import { SearchBar } from './components/SearchBar';
-import { ToastProvider } from './components/ToastProvider';
 import { useUserStore } from './stores/userStore';
 import { useTranslation } from 'react-i18next';
+import { ToastProvider } from './components/toast/ToastProvider';
+import { Header } from './components/header/Header';
+import { StatsCards } from './components/cards/StatsCards';
+import { SearchBar } from './components/search/SearchBar';
+import { UserForm } from './components/form/UserForm';
+import { UserList } from './components/list/UserList';
 import '../src//locales/i18n';
+
 
 export const App: React.FC = () => {
   const { i18n } = useTranslation();
@@ -26,7 +27,6 @@ export const App: React.FC = () => {
     deleteUser
   } = useUserStore();
 
-  // Carregar usuários ao inicializar
   useEffect(() => {
     loadUsers();
   }, [loadUsers]);

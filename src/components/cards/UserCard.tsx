@@ -1,7 +1,8 @@
 import React from "react";
-import { User } from "../types/user";
+
 import { FaEnvelope, FaPhone, FaGlobe, FaEdit, FaTrash } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { User } from "../../types/user";
 
 interface UserCardProps {
   user: User;

@@ -1,8 +1,8 @@
-// components/Header.tsx (Atualizado)
 import React from "react";
 import { FaUsers, FaUserPlus, FaDatabase, FaGlobe } from "react-icons/fa";
-import { useUserStore } from "../stores/userStore";
+
 import { useTranslation } from "react-i18next";
+import { useUserStore } from "../../stores/userStore";
 
 export const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
