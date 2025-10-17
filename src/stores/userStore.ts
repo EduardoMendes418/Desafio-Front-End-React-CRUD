@@ -67,7 +67,7 @@ export const useUserStore = create<UserState>()(
             user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             user.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
             user.phone.includes(searchTerm) ||
-            user.website.toLowerCase().includes(searchTerm.toLowerCase())
+            user.website.toLowerCase().includes(searchTerm.toLowerCase()),
         );
 
         set({ filteredUsers: filtered });
@@ -94,7 +94,7 @@ export const useUserStore = create<UserState>()(
       updateUser: (id: number, userData: UserFormData) => {
         const { users } = get();
         const updatedUsers = users.map((user) =>
-          user.id === id ? { ...userData, id } : user
+          user.id === id ? { ...userData, id } : user,
         );
 
         set({
@@ -165,6 +165,6 @@ export const useUserStore = create<UserState>()(
         users: state.users,
         language: state.language,
       }),
-    }
-  )
+    },
+  ),
 );

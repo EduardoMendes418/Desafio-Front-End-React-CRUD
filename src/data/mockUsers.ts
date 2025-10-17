@@ -1,5 +1,5 @@
 // data/mockUsers.ts
-import { User } from '../types/user';
+import { User } from "../types/user";
 
 export const mockUsers: User[] = [
   {
@@ -43,5 +43,5 @@ export const mockUsers: User[] = [
     email: "dennis@jasper.info",
     phone: "1-477-935-8478 x6430",
     website: "ola.org",
-  }
+  },
 ];
